@@ -4,8 +4,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-button {
-  padding: 1rem;
-  margin: 1rem;
-}
