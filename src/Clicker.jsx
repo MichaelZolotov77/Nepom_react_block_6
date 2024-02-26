@@ -12,8 +12,8 @@ function Clicker() {
   }
 
   useEffect(() => {
-    console.log("Hello from clicker")
-  }, [])
+    console.log("Hello from clicker", count)
+  }, [count])
 
   return (
     <div className="App">
