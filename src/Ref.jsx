@@ -1,17 +1,18 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 const WithRef = () => {
-  const numRef = useRef(0)
+  const [count, setCount] = useState(0)
 
   const handleClick = () => {
-    numRef.current = 1
+    setCount(count + 1)
+    setCount(count + 1)
+    setCount(count + 1)
   }
 
-  useEffect(() => console.log(numRef.current))
   return (
     <div>
       <h1>React app</h1>
-      <button onClick={handleClick}>{numRef.current}</button>
+      <button onClick={handleClick}>{count}</button>
     </div>
   )
 }
