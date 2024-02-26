@@ -13,6 +13,7 @@ function Clicker() {
 
   useEffect(() => {
     console.log("Hello from clicker", count)
+    return () => console.log("goodbye clicker")
   }, [count])
 
   return (
